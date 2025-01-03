@@ -87,10 +87,23 @@
       background: #e64a19;
     }
 
+    section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .screenshots {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between images */
+      flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+    }
+    
     .screenshots img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
+      max-width: 150px; /* Ensures images are not too large */
+      height: auto; /* Maintains aspect ratio */
+      border-radius: 8px; /* Optional: Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a polished look */
     }
 
     .social-links a {
